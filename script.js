@@ -15,35 +15,23 @@ function playRound(playerSelection, computerSelection) {
     let player = playerSelection.toLowerCase();
     let computer = computerSelection.toLowerCase();
 
-    // switch (player, computer) {
-    //     case player == computer:
-    //         return "It's a tie!";
-    //     break;
-
-    //     case player == "rock" && computer == "paper":
-    //         return "You Lose! Paper beats Rock.";
-    //     break;
-
-    //     case player == "paper" && computer == "scissors":
-    //         return "You Lose! Scissors beat Paper.";
-    //     break;
-
-    //     case player == "scissors" && computer == "rock":
-    //         return "You Lose! Rock beats Scissors.";
-    //     break;
-
-    //     case player == "rock" && computer == "scissors":
-    //         return "You Win! Rock beats Scissors.";
-    //     break;
-
-    //     case player == "paper" && computer == "rock":
-    //         return "You Win! Paper beats Rock.";
-    //     break;
-
-    //     case player == "scissors" && computer == "paper":
-    //         return "You Win! Scissors beat Paper."
-    //     break;
-    // }
+    if (player == computer) {
+        return "It's a tie!";
+    } else if (player == "rock" && computer == "paper") {
+        return "You Lose! Paper beats Rock";
+    } else if (player == "rock" && computer == "scissors") {
+        return "You Win! Rock beats Scissors.";
+    } else if (player == "paper" && computer == "scissors") {
+        return "You Lose! Scissors beat Paper.";
+    } else if (player == "paper" && computer == "rock") {
+        return "You Win! Paper beats Rock";
+    } else if (player == "scissors" && computer == "rock") {
+        return "You Lose! Rock beats Scissors";
+    } else if (player == "scissors" && computer == "paper") {
+        return "You Win! Scissors beat Paper";
+    } else {
+        return "That isn't a valid answer. Please enter Rock, Paper, or Scissors to play.";
+    }
 }
 
 const playerSelection = "rock";
@@ -51,5 +39,3 @@ const computerSelection = getComputerChoice();
 
 console.log(playRound(playerSelection, computerSelection));
 
-// Evaluate winner based on hierarchy - paper beats rock, rock beats scissors, scissors beat paper
-// Notify player of result
