@@ -6,15 +6,27 @@
     </head>
 
     <body>
-        <h1>Would you like to play a game?</h1>
-        <p>Select your choice below:</p>
-        <br>
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-        <br>
-        <div class="results"></div>
-        
+        <div id="wrapper">
+            <h1>Do you want to play Rock, Paper, Scissors?</h1>
+            <div id="score">
+                <h2>Player Score: <span id="player">0</span></h2>
+                <h2>Computer Score: <span id="computer">0</span></h2>
+            </div>
+            <div>
+                <p id="finalScore"></p>
+            </div>
+            <div id="btnContainer">
+                <button id="rock" class="playButtons">Rock</button>
+                <button id="paper" class="playButtons">Paper</button>
+                <button id="scissors" class="playButtons">Scissors</button>
+                <button id="newGame" class="newGameButton">New Game</button>
+            </div>
+            <div>
+                <p>Let's Play!</p>
+                <ul id="roundScore"></ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
-    <script src="script.js"></script>
+    
 </html>
