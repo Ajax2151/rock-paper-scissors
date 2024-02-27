@@ -11,6 +11,21 @@ function getComputerChoice() {
 }
 
 
+const rockChoice = document.getElementById('rock');
+rockChoice.addEventListener('click', () => {
+    alert("Rock chosen");
+});
+
+const paperChoice = document.getElementById('paper');
+paperChoice.addEventListener('click', () => {
+    alert("Paper chosen");
+});
+
+const scissorsChoice = document.getElementById('scissors');
+scissorsChoice.addEventListener('click', () => {
+    alert("Scissors chosen");
+});
+
 
 // Play a round
 function playRound(playerSelection, computerSelection) {
@@ -46,7 +61,7 @@ function playRound(playerSelection, computerSelection) {
 //     return playerChoice;
 // }
 
-const playerSelection = getPlayerChoice();
+// const playerSelection = getPlayerChoice();
 const computerSelection = getComputerChoice();
 
 // function playGame() {
