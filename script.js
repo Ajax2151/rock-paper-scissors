@@ -10,6 +10,8 @@ function getComputerChoice() {
     }
 }
 
+
+
 // Play a round
 function playRound(playerSelection, computerSelection) {
     let player = playerSelection.toLowerCase();
@@ -37,23 +39,22 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function getPlayerChoice() {
-    let playerInput = prompt("Choose Rock, Paper, or Scissors: ");
-    let playerChoice = playerInput.charAt(0).toUpperCase() + playerInput.slice(1).toLowerCase();
+// function getPlayerChoice() {
+//     let playerInput = prompt("Choose Rock, Paper, or Scissors: ");
+//     let playerChoice = playerInput.charAt(0).toUpperCase() + playerInput.slice(1).toLowerCase();
 
-    return playerChoice;
-}
+//     return playerChoice;
+// }
 
 const playerSelection = getPlayerChoice();
 const computerSelection = getComputerChoice();
 
+// function playGame() {
+//     console.log(playRound(playerSelection, computerSelection));
+//     console.log(playRound(playerSelection, computerSelection));
+//     console.log(playRound(playerSelection, computerSelection));
+//     console.log(playRound(playerSelection, computerSelection));
+//     console.log(playRound(playerSelection, computerSelection));
+// }
 
-function playGame() {
-    console.log(playRound(playerSelection, computerSelection));
-    console.log(playRound(playerSelection, computerSelection));
-    console.log(playRound(playerSelection, computerSelection));
-    console.log(playRound(playerSelection, computerSelection));
-    console.log(playRound(playerSelection, computerSelection));
-}
-
-playGame()
+// playGame()
